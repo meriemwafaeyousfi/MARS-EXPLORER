@@ -49,8 +49,8 @@ API Documentation
 
 The application uses the following APIs:
 
-* NASA Mars Rover API: https://api.nasa.gov/
-* OpenWeatherMap API: https://openweathermap.org/api
+* NASA Mars Rover photos API: https://api.nasa.gov/mars-photos
+* InSight: Mars Weather Service API: https://api.nasa.gov/insight_weather
 
 API Keys
 ---------
