@@ -105,5 +105,4 @@ The project is licensed under the MIT License.
 Acknowledgments
 ---------------
 
-* NASA for providing the Mars Rover API
-* OpenWeatherMap for providing the weather API
+* NASA for providing the Mars Rover and Mars Weather Service API 
