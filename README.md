@@ -52,17 +52,6 @@ The application uses the following APIs:
 * NASA Mars Rover photos API: https://api.nasa.gov/mars-photos
 * InSight: Mars Weather Service API: https://api.nasa.gov/insight_weather
 
-API Keys
----------
-
-To use the APIs, you need to obtain API keys from the respective providers. Create a `.env` file in the root directory and add the following variables:
-
-```bash
-REACT_APP_API_URL=https://api.nasa.gov/
-REACT_APP_OPENWEATHERMAP_API_KEY=YOUR_OPENWEATHERMAP_API_KEY
-```
-
-Replace `YOUR_OPENWEATHERMAP_API_KEY` with your actual OpenWeatherMap API key.
 
 Components
 ------------
@@ -84,6 +73,7 @@ Services
 The application uses the following services:
 
 * `api.js`: The API service
+* `PhotosService.js`: The mars rovers photos service
 * `WeatherService.js`: The weather service
 
 Utilities
@@ -99,7 +89,7 @@ Data
 The application uses the following data:
 
 * `rovers.json`: The rover data
-* `cameras.json`: The camera data
+* `cameras.json`: The camera types data
 * `solRanges.json`: The sol range data
 
 Contributing
