@@ -11,6 +11,29 @@ import WeatherService from "../services/WeatherService";
 import { formatDate } from "../utils/date_utils";
 import RoverCard from "../components/RoverCard";
 
+/**
+ * Home component that displays the main page of the application.
+ * It fetches and displays Mars weather data including temperature, wind speed,
+ * and pressure, as well as a list of Mars rovers. It provides navigation
+ * functionality to the rover pages upon selection.
+ *
+ * State:
+ * - loading: boolean to indicate if the weather data is being fetched.
+ * - errorOccured: boolean to indicate if an error occurred while fetching data.
+ * - weatherData: array that holds the formatted weather data.
+ *
+ * Effects:
+ * - Fetches Mars weather data on component mount and updates the state.
+ *
+ * Methods:
+ * - handleRoverSelection: navigates to the rover page with the selected rover's state.
+ * - fetchWeather: async function to fetch and format the Mars weather data.
+ *
+ * Render:
+ * - Displays a background, navbar, hero section, and rover cards.
+ * - Shows weather data in card format or loading skeletons if data is being fetched.
+ */
+
 function Home() {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);

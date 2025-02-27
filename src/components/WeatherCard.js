@@ -2,6 +2,20 @@ import "primeflex/primeflex.css";
 import "../App.css";
 import { Card } from "primereact/card";
 
+/**
+ * A component that displays a weather card with the following information:
+ * - SOL day
+ * - Date
+ * - Average temperature
+ * - Average wind speed
+ * - Average pressure
+ *
+ * The component is a prime react card component with a blur effect and a rounded
+ * border. The text is centered and the font size is set to small.
+ *
+ * @param {{ solDay: number, date: string, avreageTemp: number, avreageWindSpeed: number, avreagePressure: number}} props
+ * @returns {React.ReactElement}
+ */
 function WeatherCard({
   solDay,
   date,

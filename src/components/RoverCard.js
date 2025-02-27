@@ -1,5 +1,14 @@
 import React from "react";
 
+/**
+ * A card component for displaying a Mars rover with its name and image.
+ * 
+ * @param {Object} rover - The rover object containing its name and image source.
+ * @param {function} handleRoverSelection - The callback function to handle when a rover is clicked.
+ * @param {number} index - The index of the rover in the array.
+ * 
+ * @returns {ReactElement} A React element for the rover card.
+ */
 const RoverCard = ({ rover, handleRoverSelection , index}) => {
   return (
     <div

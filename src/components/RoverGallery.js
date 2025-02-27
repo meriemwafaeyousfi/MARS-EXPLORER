@@ -8,6 +8,14 @@ import { Paginator } from "primereact/paginator";
 import errorAnimation from "../assets/images-not-found.json";
 import Lottie from "lottie-react";
 
+/**
+ * A component that displays a gallery of images taken by a Mars rover.
+ *
+ * @param {Object} selectedRover - The Mars rover to fetch images for.
+ * @param {string} selectedCamera - The camera to fetch images for.
+ * @param {number} selectedSol - The Sol (Martian day) to fetch images for.
+ * @returns {ReactElement} A React element containing the gallery of images.
+ */
 export default function RoverGallery({
   selectedRover,
   selectedCamera,

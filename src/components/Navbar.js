@@ -5,6 +5,21 @@ import "../App.css";
 import imglogo from "../assets/logo.png"
 import { rovers } from "../data/data";
 
+  /**
+   * The Navbar component is a horizontal menu bar component that displays a list
+   * of menu items. The menu items are defined in the items array and include
+   * the labels and commands for each item. The start property is used to 
+   * display the logo of the application.
+   * 
+   * The Navbar component is a functional component that uses the useNavigate
+   * hook from react-router-dom to navigate to different routes when a menu item
+   * is clicked.
+   * 
+   * The Navbar component is used in the App component and is rendered in the
+   * top left corner of the application.
+   * 
+   * @returns {JSX.Element}
+   */
 const Navbar = () => {
   const navigate = useNavigate();
   const items = [

@@ -8,6 +8,18 @@ import RoverGallery from "../components/RoverGallery";
 import Navbar from "../components/Navbar";
 import { cameras } from "../data/data";
 
+/**
+ * Rover component that displays a page for selecting a Mars rover, camera, and sol (Martian day).
+ * It shows details about the selected rover and a gallery of photos taken by the rover.
+ * Uses the `RoverForm` component to handle selection changes and the `RoverGallery` to display images.
+ * 
+ * This component retrieves the initial rover selection from the router location state and manages
+ * the state for the selected rover, camera, and sol number.
+ * 
+ * @returns {JSX.Element} A component structure that includes a navbar, rover selection form,
+ *          and a gallery of images captured by the selected Mars rover.
+ */
+
 function Rover() {
   const location = useLocation();
   const initialRover = location.state;

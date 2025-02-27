@@ -5,6 +5,25 @@ import { SelectButton } from "primereact/selectbutton";
 import "primeflex/primeflex.css";
 import { rovers, cameras, solRanges } from "../data/data";
 
+/**
+ * RoverForm component for selecting a Mars rover, camera, and sol (Martian day).
+ * 
+ * This component allows users to:
+ * - Select a Mars rover from the available options.
+ * - Adjust the sol (day) on Mars using a slider based on the selected rover's sol range.
+ * - Choose a camera type for capturing images.
+ * 
+ * Props:
+ * @param {Object} selectedRover - The rover currently selected.
+ * @param {function} onRoverChange - Callback function to handle rover selection changes.
+ * @param {string} selectedCamera - The camera type currently selected.
+ * @param {function} onCameraChange - Callback function to handle camera selection changes.
+ * @param {number} selectedSol - The sol (day) currently selected.
+ * @param {function} onSolChange - Callback function to handle sol changes.
+ * 
+ * @returns {JSX.Element} A form allowing for rover, sol, and camera selection.
+ */
+
 export default function RoverForm({
   selectedRover,
   onRoverChange,

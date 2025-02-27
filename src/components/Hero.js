@@ -1,6 +1,11 @@
 import "primeflex/primeflex.css";
 import "../App.css";
 
+/**
+ * A Hero component that displays a heading and a short descriptive paragraph.
+ * The content describes Mars in a poetic way, inviting users to explore the
+ * planet.
+ */
 function Hero() {
   return (
     <div className="pl-6">
